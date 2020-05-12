@@ -1,0 +1,52 @@
+.primary-heading {
+    font-family: 'Raleway', sans-serif;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 150%;
+    word-spacing: .5rem;
+    color: $white;
+    text-align: center;
+    margin-top: 4rem;
+
+    &-left {
+        text-align: left;
+        margin-bottom: 5rem;
+        line-height: 100%;
+    }
+}
+
+.primary-paragraph {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    word-spacing: .3rem;
+    letter-spacing: 0.1rem;
+    color: $white;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+
+.secondary-heading {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 150%;
+    word-spacing: .5rem;
+    color: $white;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.cta-bottom-heading {
+    font-family: 'Raleway', sans-serif;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 150%;
+    word-spacing: .5rem;
+    color: $white;
+    text-align: center;
+    margin-bottom: 2rem;
+    
+}

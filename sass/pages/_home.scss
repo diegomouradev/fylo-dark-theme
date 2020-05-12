@@ -1,0 +1,249 @@
+.header {
+    display: flex;
+    padding: 5rem;
+    justify-content: space-between;
+}
+
+.nav {
+    
+    &__list {
+        list-style: none;
+        display: flex;
+    }
+
+    &__item {
+
+        &:not(:last-child){
+            margin-right: 5rem;
+        }
+        
+    }
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 300%;
+        left: 0;
+        background-color: $dark-blue-2;
+        height: 200rem;
+        width: 144rem;
+        z-index: -20;
+    }
+}
+
+.cta-top {
+    flex: 0 0 50%;
+    position: relative;
+ 
+
+    &__illustration-box{
+        display: flex;
+        justify-content: center;
+    }
+
+    &__illustration{
+        max-width: 100%;
+    }
+
+    &__btn {
+        margin-top: 7rem;
+        text-align: center;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 70%;
+        left: -50%;
+        background-image: url(/images/bg-curvy-desktop.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 44.9rem;
+        width: 144rem;
+        z-index: -10;
+    }
+}
+
+.features {
+    display: flex;
+    margin-top: 10rem;
+    flex-wrap: wrap;
+    width: 75%;
+    text-align: center;
+    position: relative;
+
+    &__box {
+        flex: 0 0 50%;
+        padding: 5rem 7rem;
+    }
+
+}
+
+.special-features {
+    display: flex;
+    width: 85%;
+    align-items: center;
+
+    &__illustration-box {
+        flex: 0 0 50%;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__illustration {
+        max-width: 100%;
+        padding: 3rem;
+    }
+
+    &__text-box {
+        flex: 0 0 50%;
+        padding: 3rem;
+        
+    }
+
+    &__link-box {
+        display: inline-block;
+        margin-top: 5rem;
+        padding-bottom: 1rem;
+        border-bottom: 0.1rem solid $cyan;
+    }
+
+    &__link {
+        color: $cyan;
+    }
+
+    &__link-icon {
+        margin-left: 1rem;
+    }
+}
+
+.testimonial {
+    display: flex;
+    width: 85%;
+    margin-top: 10rem;
+    position: relative;
+    
+    &__box {
+        background-color: $dark-blue-4;
+        padding: 3rem 3rem;
+        display: flex;
+        flex-wrap: wrap;
+        border-radius: .5rem;
+        justify-content: space-between;
+        box-shadow: 0 .2rem 2rem rgba($color: #000000, $alpha: .25);
+
+        &:not(:last-child){
+            margin-right: 3rem;
+        }
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: -5rem;
+        left: -2.5rem;
+        width: 20rem;
+        height: 10rem;
+        background-image: url(/images/bg-quotes.png);
+        background-repeat: no-repeat;
+        z-index: 10;
+    }
+
+}
+
+.author {
+
+    &__box {
+        display: flex;
+        align-items: center;
+        margin-top: 3rem;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;    }
+
+    &__picture {
+        width: 5rem;
+        height: auto;
+        border-radius: 50%;
+        margin-right: 2rem;
+    }
+
+    &__title {
+        font-size: 1rem;
+    }
+}
+
+// CTA BOTTOM
+.cta-bottom {
+
+    &__card {
+        background-color: $dark-blue-1;
+        max-width: 70%;
+        padding: 3rem 10rem;
+        display: flex;
+        flex-wrap: wrap;
+        border-radius: .5rem;
+        justify-content: center;
+        box-shadow: 0 .2rem 3rem rgba($color: #000000, $alpha: .30);
+        margin-top: 10rem;
+        text-align: center;
+    }
+
+    &__form {
+        display: flex;
+        margin-top: 3rem;
+        flex: 1 0 100%;
+        
+    }
+}
+
+.form {
+
+
+    &__input {
+        padding: 1rem 1rem 1rem 3rem;
+        margin-right: 3rem;
+        max-width: 70%;
+        border: none;
+        border-radius: 5rem;
+        flex: 2;
+
+        &::-moz-placeholder {
+            margin-left: 1rem;
+            font-size: inherit;
+            font-weight: 100;
+            color: var(--color-grey-dark-2);
+        }
+    }
+
+    &__input-label {
+        display: none;
+    }
+
+    &__btn {
+        flex: 1;
+        background-image: linear-gradient(to bottom right, $cyan, $blue);
+        padding: 1rem 0;
+        border: none;
+        font-family: inherit;
+        color: $white;
+        font-weight: 700;
+        border-radius: 10rem;
+        font-size: 1.4rem;
+    }
+}
+
+// FOOTER
+
+.footer__nav {
+    display: flex;
+    
+}
