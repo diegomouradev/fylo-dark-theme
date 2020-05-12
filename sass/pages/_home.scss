@@ -24,17 +24,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
-    &::after {
-        content: "";
-        position: absolute;
-        top: 300%;
-        left: 0;
-        background-color: $dark-blue-2;
-        height: 200rem;
-        width: 144rem;
-        z-index: -20;
-    }
 }
 
 .cta-top {
@@ -59,13 +48,13 @@
     &::before {
         content: "";
         position: absolute;
-        top: 70%;
+        top: 73%;
         left: -50%;
         background-image: url(/images/bg-curvy-desktop.svg);
         background-size: contain;
         background-repeat: no-repeat;
         height: 44.9rem;
-        width: 144rem;
+        width: 100vw;
         z-index: -10;
     }
 }
@@ -73,6 +62,7 @@
 .features {
     display: flex;
     margin-top: 10rem;
+    margin-bottom: 5rem;
     flex-wrap: wrap;
     width: 75%;
     text-align: center;
@@ -80,14 +70,18 @@
 
     &__box {
         flex: 0 0 50%;
-        padding: 5rem 7rem;
+        padding: 5rem 4rem;
+    }
+
+    &__icon {
+        height: 8.8rem;
     }
 
 }
 
 .special-features {
     display: flex;
-    width: 85%;
+    width: 90%;
     align-items: center;
 
     &__illustration-box {
@@ -125,13 +119,13 @@
 
 .testimonial {
     display: flex;
-    width: 85%;
+    width: 90%;
     margin-top: 10rem;
     position: relative;
     
     &__box {
         background-color: $dark-blue-4;
-        padding: 3rem 3rem;
+        padding: 3rem 2rem;
         display: flex;
         flex-wrap: wrap;
         border-radius: .5rem;
@@ -146,13 +140,13 @@
     &::before {
         content: "";
         position: absolute;
-        top: -5rem;
-        left: -2.5rem;
+        top: -3.2rem;
+        left: -1rem;
         width: 20rem;
         height: 10rem;
         background-image: url(/images/bg-quotes.png);
         background-repeat: no-repeat;
-        z-index: 10;
+        z-index: -10;
     }
 
 }
@@ -162,7 +156,7 @@
     &__box {
         display: flex;
         align-items: center;
-        margin-top: 3rem;
+        margin-top: 2rem;
     }
 
     &__info {
@@ -170,7 +164,7 @@
         flex-direction: column;    }
 
     &__picture {
-        width: 5rem;
+        width: 3rem;
         height: auto;
         border-radius: 50%;
         margin-right: 2rem;
@@ -182,18 +176,19 @@
 }
 
 // CTA BOTTOM
+
 .cta-bottom {
 
     &__card {
         background-color: $dark-blue-1;
-        max-width: 70%;
-        padding: 3rem 10rem;
+        max-width: 60%;
+        padding: 3.5rem 5rem;
         display: flex;
         flex-wrap: wrap;
         border-radius: .5rem;
         justify-content: center;
-        box-shadow: 0 .2rem 3rem rgba($color: #000000, $alpha: .30);
-        margin-top: 10rem;
+        box-shadow: 0 .2rem 3rem rgba($color: #000000, $alpha: .6);
+        margin-top: 20rem;
         text-align: center;
     }
 
@@ -210,8 +205,8 @@
 
     &__input {
         padding: 1rem 1rem 1rem 3rem;
-        margin-right: 3rem;
-        max-width: 70%;
+        margin-right: 2rem;
+        max-width: 60%;
         border: none;
         border-radius: 5rem;
         flex: 2;
@@ -243,7 +238,72 @@
 
 // FOOTER
 
-.footer__nav {
+.footer {
     display: flex;
+    flex-wrap: wrap;
+    background-color: $dark-blue-3;
+    margin-top: -10%;
+    padding: 18rem 8rem 5rem 8rem;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 156%;
+        left: 0;
+        background-color: $dark-blue-2;
+        height: 200rem;
+        width: 100vw;
+        z-index: -20;
+    }
+
+    &__logo {
+        margin: 2rem 0;
+    }
+
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+    }
     
+}
+
+.nav {
+
+    &__address {
+        flex: 0 0 30%;
+        display: flex;
+
+    }
+
+    &__icon {
+        margin-right: 2rem;
+    }
+
+    &__list--1 {
+        flex: 0 0 20%;
+        margin-left: 3rem;
+        list-style: none;
+    }
+
+
+    &__list--2{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex-basis: 15%;
+        list-style: none;
+        margin-left: 3rem;
+    }
+
+    &__list--3 {
+        display: flex;
+        flex-basis: 15%;
+        list-style: none;
+    }
+
+
+
+    &__item--footer {
+        margin-bottom: 1rem;
+    }
 }
