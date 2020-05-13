@@ -45,18 +45,18 @@
         text-align: center;
     }
 
-    &::before {
-        content: "";
-        position: absolute;
-        top: 73%;
-        left: -50%;
-        background-image: url(/images/bg-curvy-desktop.svg);
-        background-size: contain;
-        background-repeat: no-repeat;
-        height: 44.9rem;
-        width: 100vw;
-        z-index: -10;
-    }
+    // &::before {
+    //     content: "";
+    //     position: absolute;
+    //     top: 73%;
+    //     left: -50%;
+    //     background-image: url(/images/bg-curvy-desktop.svg);
+    //     background-size: contain;
+    //     background-repeat: no-repeat;
+    //     height: 44.9rem;
+    //     width: 100vw;
+    //     z-index: -10;
+    // }
 }
 
 .features {
@@ -245,16 +245,16 @@
     margin-top: -10%;
     padding: 18rem 8rem 5rem 8rem;
 
-    &::before {
-        content: "";
-        position: absolute;
-        top: 156%;
-        left: 0;
-        background-color: $dark-blue-2;
-        height: 200rem;
-        width: 100vw;
-        z-index: -20;
-    }
+    // &::before {
+    //     content: "";
+    //     position: absolute;
+    //     top: 156%;
+    //     left: 0;
+    //     background-color: $dark-blue-2;
+    //     height: 200rem;
+    //     width: 100vw;
+    //     z-index: -20;
+    // }
 
     &__logo {
         margin: 2rem 0;

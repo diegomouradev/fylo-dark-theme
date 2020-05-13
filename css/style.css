@@ -100,17 +100,6 @@ a {
   .cta-top__btn {
     margin-top: 7rem;
     text-align: center; }
-  .cta-top::before {
-    content: "";
-    position: absolute;
-    top: 73%;
-    left: -50%;
-    background-image: url(/images/bg-curvy-desktop.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 44.9rem;
-    width: 100vw;
-    z-index: -10; }
 
 .features {
   display: flex;
@@ -244,15 +233,6 @@ a {
   background-color: #0b1523;
   margin-top: -10%;
   padding: 18rem 8rem 5rem 8rem; }
-  .footer::before {
-    content: "";
-    position: absolute;
-    top: 156%;
-    left: 0;
-    background-color: #181f2a;
-    height: 200rem;
-    width: 100vw;
-    z-index: -20; }
   .footer__logo {
     margin: 2rem 0; }
   .footer__nav {
