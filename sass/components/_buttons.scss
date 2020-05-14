@@ -3,5 +3,10 @@
     padding: 2rem 10rem;
     border-radius: 10rem;
     font-size: 1.8rem;
+
+    @include respond(phone) {
+        font-size: 1.4rem;
+        padding: 1rem 8rem;
+    }
     
 }
