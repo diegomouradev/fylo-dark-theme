@@ -128,12 +128,12 @@ a {
     top: 125rem;
     left: 0;
     background-color: #181f2a;
-    height: 300%;
+    height: 250%;
     width: 100vw;
     z-index: -20; }
     @media (max-width: 37.5em) {
       .main::after {
-        top: 47.5rem;
+        top: 52.5rem;
         left: 0;
         height: 500%; } }
 
