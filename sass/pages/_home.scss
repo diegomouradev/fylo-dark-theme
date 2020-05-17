@@ -121,7 +121,7 @@
         position: absolute;
         top: 73%;
         left: -50%;
-        background-image: url(/images/bg-curvy-desktop.svg);
+        background-image: url(../images/bg-curvy-desktop.svg);
         background-size: contain;
         background-repeat: no-repeat;
         height: 44.9rem;
@@ -129,7 +129,7 @@
         z-index: -10;
 
         @include respond(phone) {
-            background-image: url(/images/bg-curvy-mobile.svg);
+            background-image: url(../images/bg-curvy-mobile.svg);
             left: -5%;
             top: 50%;
         }
